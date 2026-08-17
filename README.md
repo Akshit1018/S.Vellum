@@ -1,37 +1,42 @@
-# S.Vellum
+# Vellum — Open Source PDF to Markdown Converter (On-Device)
 
-**Simple name:** Vellum
+**Vellum** turns a PDF into clean Markdown **on this device**. Drop a file, pick fidelity or compact, copy or download `.md`. No upload to a random converter site.
 
-Turn a PDF into Markdown on this device.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This is a Grok App Builder project. The sandbox npm name was `app-builder-workspace`. On GitHub it is **S.Vellum** (private).
+## Features
 
-## Run on this Mac
+- Drag-and-drop PDF
+- Fidelity vs compact profiles
+- Copy, download, share
+- Raw / cleaned toggle
+- Local processing — good for contracts and notes you do not want to upload
 
-Need **Node.js 22** and **npm**. Postgres is not required (uses PGLite in the browser/process).
+## Who it is for
+
+- Writers converting papers and books
+- Legal / ops teams who cannot ship PDFs to SaaS
+- Developers who need a **PDF → Markdown** UI
+
+## Quick start
 
 ```bash
-cd "/Users/akshitpareta/Documents/S-projects/S.Vellum"
+git clone https://github.com/Akshit1018/S.Vellum.git
+cd S.Vellum
 npm install
-npm run dev
-```
-
-Open http://127.0.0.1:8080
-
-To skip Grok login in local preview:
-
-```bash
 VITE_AUTH_ENABLED=false npm run dev
 ```
 
-Optional AI (only if this app calls Grok): set `XAI_API_KEY`.
+Open [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
-## Scripts
+## Tech stack
 
-- `npm run dev` — Vite on port 8080
-- `npm run build` — production build + DB migrate (skipped without DATABASE_URL)
-- `npm run typecheck`
+React 19 · TanStack Start · Vite · Tailwind · in-browser PDF pipeline
 
-## Notes
+## License
 
-Do not commit `.env`, `node_modules`, or `.grok/`.
+[MIT](LICENSE)
+
+## Keywords
+
+PDF to Markdown, on-device PDF converter, private PDF parser, open source pdf2md, contract to markdown
